@@ -8,6 +8,7 @@
 body {
     font-family: 'Cairo', sans-serif;
     background-color: #f4f4f4;
+    overflow-x:hidden ;
 }
 
 .navbar {
@@ -144,7 +145,7 @@ body {
  .header { 
  padding-top: 30px;
  color: rgb(8, 8, 8);
-  height: 100vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -236,17 +237,26 @@ body {
     }
   
   #img_bro{
-    width: 500px;
-    height:600px;
+  
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     border-radius: 25px;
     float: left;
     display: block;
     padding: 50px 25px;
-    
-   
   }
+
+
+  /* @media (max-width: 768px){ 
+    #img_bro {
+        float: none;
+        margin: 0 auto;
+        padding: 20px;
+    }
+/*  */
   #brotien p {
-    font-weight: 200;
+    font-weight: 300;
     font-style: italic;
     font-family:Arial, Helvetica, sans-serif;
     font-size:x-large;
@@ -319,12 +329,13 @@ body {
   }
   
   .price-list table {
-    width: 60%;
+    width: 90%;
     border-collapse: collapse;
     margin-top: 1rem;
     font-size: larger;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   
     
    
@@ -425,7 +436,7 @@ body {
   .social-icons {
     display: flex;
     gap: 15px;
-    padding-left: 5cm;
+    padding-left: 3cm;
        
     
     
